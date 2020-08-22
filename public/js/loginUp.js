@@ -16,7 +16,6 @@ const loginupjs={
 						localStorage.login=true
 						localStorage.user=JSON.stringify(mainjs.data)
 						window.location.replace(`./`)
-						console.log('FT si sta bien logeado esto')
 					}else
 						boot.logic.popUpAlert({err: true, msg: 'La contraseña es incorrecta', time: 4000})
 				}else
@@ -25,7 +24,6 @@ const loginupjs={
 			if(localStorage.users){
 				try{
 					let users=JSON.parse(localStorage.users)
-					console.log(users, 'FT estos son los usuarios')
 					let userf=users.filter(val=>val.mail.match(new RegExp(datas.user, 'gi')))
 					if(userf.length){
 						if(datas.pass===userf[0].pass){
