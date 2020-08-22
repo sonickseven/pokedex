@@ -7,6 +7,7 @@ body{
     margin: 0;
     list-style: none;
     padding: 6px 0 0;
+
     display: grid;
 	grid-gap: 7px;
 	grid-template-columns: repeat(auto-fill, minmax(235px,1fr));
@@ -28,6 +29,11 @@ body{
     text-align: center;
     max-width: 391px;
     margin: 0 auto;
+    position: relative;
+}
+.ss-carRow-pokemon .ss-close-icon{
+	font-size: 35px;
+	color: #555;
 }
 .ss-carRow-pokemon > h5 {
     font-size: 23px;
@@ -55,3 +61,11 @@ body{
 	font-size: 12px;
 }
 
+@media (max-width: 599px){
+	.ss-content-cardRow > ul{
+		display: block;
+	}
+	.ss-item-card {
+	    margin-top: 5px;
+	}
+}

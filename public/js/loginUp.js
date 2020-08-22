@@ -27,7 +27,6 @@ const loginupjs={
 					let userf=users.filter(val=>val.mail.match(new RegExp(datas.user, 'gi')))
 					if(userf.length){
 						if(datas.pass===userf[0].pass){
-							console.log('FT bien hecho muchahcos jajaja')
 							localStorage.login=true
 							localStorage.user=JSON.stringify(userf[0])
 							window.location.replace(`./`)

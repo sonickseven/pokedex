@@ -1,6 +1,7 @@
 const pokemonjs={
 	templates:{
 		cardPokemon: data=>`<div class="ss-carRow-pokemon">
+				<i class="ss-close-icon ss-coni-cancel-1" onclick="window.history.go(-1); return false;"></i>
 				<h5>${data.name}</h5>
 				<div class="ss-img-pokemon" style="background-image: url(${data.img})"></div>
 				<div class="ss-row-padding text-left">
@@ -23,7 +24,7 @@ const pokemonjs={
 				<div class="ss-content-types-pokemon">
 					${data.types.map(val=>
 						`<div>
-							<a href="" class="ss-button-gray">${val.name}</a>
+							<a class="ss-button-gray">${val.name}</a>
 						</div>`
 					).join('')}
 				</div>

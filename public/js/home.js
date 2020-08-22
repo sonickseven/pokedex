@@ -9,7 +9,7 @@ const homejs={
 				<h5>${data.name}</h5>
 				<div class="ss-img-pokemon" style="background-image: url(${data.img||'./public/imgs/6d8rt4h6rdt4h68drthd.png'})"></div>
 				<div class="ss-content-types-pokemon">${
-					data.types.map(val=>`<div><a href="" class="ss-button-gray">${val.name}</a></div>`).join('')
+					data.types.map(val=>`<div><a class="ss-button-gray">${val.name}</a></div>`).join('')
 				}
 				</div>
 				<div class="ss-row-padding">
