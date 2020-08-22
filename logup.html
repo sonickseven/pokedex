@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pokedex</title>
+	<link href="./public/imgs/favicon.png" rel="shortcut icon" type="image/png">
+	<link rel="stylesheet" type="text/css" media="screen" href="./public/css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./public/css/logup.css">
+	<script class="ss-jquery-js" type="text/javascript" src="./public/sfLib/jquery-3.2.1.min.js"></script>
+	<script src="./public/sfLib/boot.js" type="text/javascript"></script>
+	<script src="./public/js/main.js" type="text/javascript"></script>
+	<script src="./public/js/loginUp.js" type="text/javascript"></script>
+</head>
+<body>
+	<section class="ss-body">
+		<h1>Pokedex</h1>
+		<img src="./public/imgs/favicon.png" alt="Pokedex" class="ss-logo-img">
+		<article class="ss-form-login">
+			<h3>CREA ENTRENADOR</h3>
+			<form class="ss-create-master">
+				<div class="ss-row-padding">
+					<input type="text" placeholder="Nombre del entrenador" required class="ss-name-user">
+				</div>
+				<div class="ss-row-padding">
+					<input type="email" placeholder="Correo electrónico" required class="ss-mail-user">
+				</div>
+				<div class="ss-row-padding">
+					<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La contraseña debe tener mínimo 8 letras o números, letras mayusculas y un caracter especial" placeholder="Contraseña" required class="ss-password">
+				</div>
+				<div class="ss-row-padding">
+					<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La contraseña debe tener mínimo 8 letras o números, letras mayusculas y un caracter especial" placeholder="Confirmar contraseña" required class="ss-password2">
+				</div>
+				<div class="ss-row-padding">
+					<button class="ss-button-pokemon">Empezar como entrenador</button>
+				</div>
+			</form>
+			<div class="ss-row-padding">
+				<a href="./login.html" class="ss-logup ss-button-neutra">Cancelar</a>
+			</div>
+		</article>
+	</section>
+</body>
+</html>

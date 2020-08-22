@@ -1,0 +1,71 @@
+@font-face{
+	font-family: pokemon;
+	src:url('../../public/font/pokemon/PokemonSolid.ttf');
+}
+
+body, html{
+	margin:0;
+	padding:0;
+}
+.ss-header-menu {
+    background: linear-gradient(138deg, rgb(33, 0, 36) 0%, rgb(140, 33, 133) 35%, rgb(180, 157, 193) 100%);
+    font: 23px arial;
+    padding: 8px 6px;
+    color: #fff;
+    position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+.ss-header-menu > * {
+    vertical-align: middle;
+    display: inline-block;
+}
+.ss-header-menu img{
+	height: 40px;
+	margin: 0 22px 0 23px;
+}
+.ss-content-cards {
+    padding: 60px 0 0;
+}
+.ss-lista-skills span {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 6px 12px;
+    background-color: #ddd;
+    color: #444;
+    margin-left: 4px;
+}
+.text-left{
+	text-align: left;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+}
+.ss-footer-pokedex {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    display: none;
+}
+.ss-footer-pokedex div{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	box-sizing: border-box;
+}
+.ss-logout{
+	color: #fff;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+@media (max-width: 599px){
+    .ss-hidden-cel{
+    	display: none;
+    }
+    .ss-header-menu img{
+    	margin: 0 11px 0 8px;
+    }
+    .ss-inputSearch{
+    	width: 210px;	
+    }
+}
